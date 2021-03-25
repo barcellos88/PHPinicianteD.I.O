@@ -15,40 +15,37 @@ $nome = 'Eduardo';
 $idade = 7;
 //var_dump($nome, $idade);mostra tipo de variavel
 
-if($idade>=6 && $idade<=12)
+if ($idade>=6 && $idade<=12)
 {
     //impressão de forma simples
     //echo 'Infantil';
 
     //com laço de repetição
-    for($i=0; $i<=count($categorias); $i++)
+    for ($i=0; $i<=count($categorias); $i++)
     {
         if($categorias[$i] == 'Infantil')
             echo "O nadador ".$nome." Compete na categoria ".$categorias[$i];
     }
 }
-elseif($idade>=13 && $idade<=18){
-
+elseif($idade>=13 && $idade<=18)
+{
     //echo 'Adolescente';
 
-    for($i=0; $i<=count($categorias); $i++)
+    for ($i=0; $i<=count($categorias); $i++)
     {
         if($categorias[$i] == 'Adolescente')
             echo "O nadador ".$nome." Compete na categoria ".$categorias[$i];;
     }
-
 }
-else{
-
+else
+{
     //echo 'Adulto';
 
-    for($i=0; $i<=count($categorias); $i++)
+    for ($i=0; $i<=count($categorias); $i++)
     {
         if($categorias[$i] == 'Adulto')
             echo "O nadador ".$nome." Compete na categoria ".$categorias[$i];;
     }
-
-
 }
 
 ?>
