@@ -1,44 +1,21 @@
-<!-- Crie um projeto em PHP para uma competição de natação, o sistema deverá permitir 
-a inserção de competidores com seu nome e idade,e o sistema deverá identificar
-em qual categoria o nadador erá competir, por exemplo, 6 a 12 anos categoria infantil,
-de 13 a 18 categoria adolescente, acima de 18 categoria adulto, o sistema deverá retornar 
-a categoria para cada nadador que for cadastrado. -->
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de inscrição</title>
+</head>
 
-$categorias   = [];
-$categorias[] = 'Infantil';
-$categorias[] = 'Adolescente';
-$categorias[] = 'Adulto'; 
-//print_r($categorias);
+<body>
 
-$nome = 'Eduardo';
-$idade = 7;
-//var_dump($nome, $idade);mostra tipo de variavel
+<p>FORMULÁRIO PARA INSCRIÇÃO DE COMPETIDORES</p>
 
-if ($idade>=6 && $idade<=12)
-{
+<form action="script.php" method="post">
+    <p>Seu Nome: <input type="text" name="nome" /></p>
+    <p>Sua Idade: <input type="text" name="idade" /></p>
+    <p><input type="submit" value="Enviar dados do competidor"></p>
+</form>
     
-    for ($i=0; $i<=count($categorias); $i++)
-    {
-        if($categorias[$i] == 'Infantil')
-            echo "O nadador ".$nome." Compete na categoria ".$categorias[$i];
-    }
-}
-elseif($idade>=13 && $idade<=18)
-{
-    for ($i=0; $i<=count($categorias); $i++)
-    {
-        if($categorias[$i] == 'Adolescente')
-            echo "O nadador ".$nome." Compete na categoria ".$categorias[$i];;
-    }
-}
-else
-{
-    for ($i=0; $i<=count($categorias); $i++)
-    {
-        if($categorias[$i] == 'Adulto')
-            echo "O nadador ".$nome." Compete na categoria ".$categorias[$i];;
-    }
-}
-
-?>
+</body>
+</html>
