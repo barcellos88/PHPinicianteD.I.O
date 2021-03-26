@@ -17,10 +17,7 @@ $idade = 7;
 
 if ($idade>=6 && $idade<=12)
 {
-    //impressão de forma simples
-    //echo 'Infantil';
-
-    //com laço de repetição
+    
     for ($i=0; $i<=count($categorias); $i++)
     {
         if($categorias[$i] == 'Infantil')
@@ -29,8 +26,6 @@ if ($idade>=6 && $idade<=12)
 }
 elseif($idade>=13 && $idade<=18)
 {
-    //echo 'Adolescente';
-
     for ($i=0; $i<=count($categorias); $i++)
     {
         if($categorias[$i] == 'Adolescente')
@@ -39,8 +34,6 @@ elseif($idade>=13 && $idade<=18)
 }
 else
 {
-    //echo 'Adulto';
-
     for ($i=0; $i<=count($categorias); $i++)
     {
         if($categorias[$i] == 'Adulto')
